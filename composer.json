@@ -1,0 +1,18 @@
+{
+    "name": "nekam/simracing",
+    "type": "project",
+    "require": {
+        "eftec/bladeone": "^4.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nekam\\Simracing\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "redondo03",
+            "email": "redondogameroalejandro@gmail.com"
+        }
+    ]
+}
