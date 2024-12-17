@@ -9,4 +9,4 @@ $Cache = __DIR__ . '\Cache';
 
 $blade = new BladeOne($Views, $Cache);
 
-echo $blade->run('index',["hola"=>"javi"]);
+echo $blade->run('Home',["hola"=>"javi"]);

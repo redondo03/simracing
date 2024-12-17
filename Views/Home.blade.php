@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
   </style>
-  <link rel="stylesheet" href="../src/Style/app.css">
+  <link rel="stylesheet" href="/src/Style/app.css">
 </head>
 
 <body>
@@ -61,7 +61,7 @@
       <h2 class="section-title">ÚNETE</h2>
       <p>DISCORD</p>
       <p>
-        <?xml version="1.0" encoding="UTF-8"?>
+        
         <svg class="svg-discord" version="1.1" viewBox="0 0 2048 2048" width="100" height="100"
           xmlns="http://www.w3.org/2000/svg">
           <path transform="translate(991)"
