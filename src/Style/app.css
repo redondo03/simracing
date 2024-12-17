@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,600;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Rubik:ital,wght@0,600;1,600&display=swap');
 
-
-
 :root {
   /* Colores originales */
   --black: #333333;
@@ -19,7 +17,6 @@
   font-family: "Rubik Dirt", system-ui;
 }
 
-
 .regular-font {
   font-family: "Rubik", sans-serif;
 }
@@ -32,26 +29,56 @@ body {
 /* Encabezado */
 .navbar {
   background-color: var(--black);
-  border-bottom: 2px solid var(--red);
+  border-bottom: 0.125rem solid var(--red);
 }
+
 /* Secciones centradas */
 .hero-section,
 .features-section,
 .join-section {
   font-family: 'rubik';
-  /* border: 1px outset var(--silver);  */
-  /* box-shadow: 0 1px 2px var(--silver); */
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
+  border: 1px outset var(--silver); 
+  /* box-shadow: 0 0.0625rem 0.125rem var(--silver);  */
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  margin: 1.25rem auto;
   /* Ancho máximo para centrar mejor */
   text-align: center;
   /* Contenido centrado */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .first-title {
   font-family: "Rubik Dirt", system-ui;
+}
+
+.section-title-div {
+  border: 1px outset var(--silver); 
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.section-title-items {
+  display: flex;
+  flex-flow: column wrap;
+  justify-self: center;
+  max-width: 90vh;
+}
+
+.section-title-img {
+  max-width: 100vh;
+  margin-top: 3rem;
+}
+
+.section-title {
+  color: var(--red);
+}
+
+.img-fluid {
+  max-width: 100%;
 }
 
 .hero-img {
@@ -62,7 +89,7 @@ body {
 .footer-top {
   background-color: var(--red);
   /* Franja roja */
-  padding: 10px 0;
+  padding: 0.625rem 0;
 }
 
 .footer-top img {
@@ -74,14 +101,14 @@ body {
   background-color: var(--black);
   /* Fondo negro */
   color: var(--white);
-  padding: 15px 0;
+  padding: 0.9375rem 0;
   text-align: center;
 }
 
 .social-icons i {
   color: var(--yellow);
-  margin: 0 10px;
-  font-size: 20px;
+  margin: 0 0.625rem;
+  font-size: 1.25rem;
 }
 
 a {
@@ -93,6 +120,15 @@ a:hover {
   color: var(--yellow-gold);
 }
 
-.logo-header{
+.logo-header {
   width: 35%;
+}
+
+li:hover {
+  border-radius: 7%;
+  background-color: var(--silver);
+}
+
+.navbar-nav {
+  gap: 2rem;
 }
