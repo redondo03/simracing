@@ -2,133 +2,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Rubik:ital,wght@0,600;1,600&display=swap');
 
 :root {
-  /* Colores originales */
-  --black: #333333;
-  --white: #EDEDED;
-  --silver: #CCCCCC;
-  --red: #D50000;
-  --red-light: #FF073A;
-  --red-dark: #9E0000;
-  --yellow: #FFD700;
-  --yellow-gold: #FFA500;
+    /* Colores originales */
+    --black: #333333;
+    --white: #EDEDED;
+    --silver: #CCCCCC;
+    --red: #D50000;
+    --red-light: #FF073A;
+    --red-dark: #9E0000;
+    --yellow: #FFD700;
+    --yellow-gold: #FFA500;
 }
 
 .unique-font {
-  font-family: "Rubik Dirt", system-ui;
+    font-family: "Rubik Dirt", system-ui;
 }
 
 .regular-font {
-  font-family: "Rubik", sans-serif;
+    font-family: "Rubik", sans-serif;
 }
 
 body {
-  background-color: var(--black);
-  color: var(--white);
+    background-color: var(--black);
+    color: var(--white);
 }
 
 /* Encabezado */
 .navbar {
-  background-color: var(--black);
-  border-bottom: 0.125rem solid var(--red);
+    background-color: var(--black);
+    border-bottom: 0.125rem solid var(--red);
 }
 
 /* Secciones centradas */
 .hero-section,
 .features-section,
 .join-section {
-  font-family: 'rubik';
-  border: 1px outset var(--silver); 
-  /* box-shadow: 0 0.0625rem 0.125rem var(--silver);  */
-  border-radius: 0.625rem;
-  padding: 1.25rem;
-  margin: 1.25rem auto;
-  /* Ancho máximo para centrar mejor */
-  text-align: center;
-  /* Contenido centrado */
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
+    font-family: 'rubik';
+    /* border: 1px outset var(--silver); */
+    /* box-shadow: 0 0.0625rem 0.125rem var(--silver);  */
+    border-radius: 0.625rem;
+    /* Ancho máximo para centrar mejor */
+    text-align: center;
+    /* Contenido centrado */
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .first-title {
-  font-family: "Rubik Dirt", system-ui;
+    font-family: "Rubik Dirt", system-ui;
 }
 
 .section-title-div {
-  border: 1px outset var(--silver); 
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.section-title-items {
-  display: flex;
-  flex-flow: column wrap;
-  justify-self: center;
-  max-width: 90vh;
+    padding: 0;
 }
 
 .section-title-img {
-  max-width: 100vh;
-  margin-top: 3rem;
+    display: flex;
+    justify-items: center;
+    allign-items: center;
 }
 
 .section-title {
-  color: var(--red);
+    color: var(--red);
 }
 
 .img-fluid {
-  max-width: 100%;
+    /*  max-width: 100%;*/
 }
 
 .hero-img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 /* Footer */
 .footer-top {
-  background-color: var(--red);
-  /* Franja roja */
-  padding: 0.625rem 0;
+    background-color: var(--red);
+    /* Franja roja */
+    padding: 0.625rem 0;
 }
 
 .footer-top img {
-  max-height: 5rem;
-  margin: 0 3rem;
+    max-height: 5rem;
+    margin: 0 3rem;
 }
 
 .footer-bottom {
-  background-color: var(--black);
-  /* Fondo negro */
-  color: var(--white);
-  padding: 0.9375rem 0;
-  text-align: center;
+    background-color: var(--black);
+    /* Fondo negro */
+    color: var(--white);
+    padding: 0.9375rem 0;
+    text-align: center;
 }
 
 .social-icons i {
-  color: var(--yellow);
-  margin: 0 0.625rem;
-  font-size: 1.25rem;
-}
-
-a {
-  text-decoration: none;
-  color: var(--yellow);
-}
-
-a:hover {
-  color: var(--yellow-gold);
+    color: var(--yellow);
+    margin: 0 0.625rem;
+    font-size: 1.25rem;
 }
 
 .logo-header {
-  width: 35%;
+    width: 35%;
+}
+
+.nav-link{
+    color: var(--white);
 }
 
 li:hover {
-  border-radius: 7%;
-  background-color: var(--silver);
+    border-radius: 7%;
+    background-color: var(--red);
+    color: var(--black);
 }
 
 .navbar-nav {
-  gap: 2rem;
+    gap: 2rem;
 }
