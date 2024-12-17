@@ -1,200 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Rubik:ital,wght@0,600;1,600&display=swap');
+
+
+
 :root {
   /* Colores originales */
-  --jet: #333333;
-  --white-smoke: #f5f5f5;
-  --silver: #cccccc;
-  --engineering-orange: #d50000;
-  --imperial-red: #ff073a;
-  --penn-red: #9e0000;
-  --yellow: #f7ff33;
-  --chartreuse: #e1ff00;
-  --old-gold: #b2b200;
+  --black: #333333;
+  --white: #EDEDED;
+  --silver: #CCCCCC;
+  --red: #D50000;
+  --red-light: #FF073A;
+  --red-dark: #9E0000;
+  --yellow: #FFD700;
+  --yellow-gold: #FFA500;
+}
 
-  /* Colores complementarios */
-  --jet-complementary: #cccccc;
-  --white-smoke-complementary: #0a0a0a;
-  --silver-complementary: #333399;
-  --engineering-orange-complementary: #00d5d5;
-  --imperial-red-complementary: #07ffcd;
-  --penn-red-complementary: #009e9e;
-  --yellow-complementary: #3300cc;
-  --chartreuse-complementary: #001eff;
-  --old-gold-complementary: #0020b2;
+.unique-font {
+  font-family: "Rubik Dirt", system-ui;
+}
+
+
+.regular-font {
+  font-family: "Rubik", sans-serif;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--jet);
-  color: var(--white-smoke);
-}
-.logo {
-  height: 150px;
-  width: 200px;
-  align-self: left;
-}
-.container-logo {
-  display: flex;
-}
-.header-line,
-.footer-line {
-  height: 2px;
-  width: 80%;
-  border: solid 2px var(--imperial-red);
-  opacity: 100%;
-  margin-left: 10%;
+  background-color: var(--black);
+  color: var(--white);
 }
 
-.footer-line {
-  margin-top: 0px;
+/* Encabezado */
+.navbar {
+  background-color: var(--black);
+  border-bottom: 2px solid var(--red);
 }
-
-.header-line {
-  margin-bottom: 70px;
-}
-
-.nav-container {
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
-  margin: 0;
-  display: flex;
-}
-
-.container-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-}
-
-.join-us,
-.presentation,
-.text {
-  
-  margin: 20px;
-  width: 80%;
-  border-radius: 15px; /* Bordes redondeados */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-  padding: 15px; /* Espaciado interno */
-}
-
-.join-us {
-  width: 40%; /* Cambiar el ancho a 40% */
-}
-
-.text, .presentation, .join-us {
-  text-align: center;
-}
-
-.button {
-  border: 2px solid var(--engineering-orange); /* Borde igual que el relleno */
-  background-color: var(
-    --engineering-orange
-  ); /* Interior en --engineering-orange */
-  color: white; /* Texto en blanco */
-  padding: 10px 20px; /* Espaciado interno */
-  border-radius: 5px; /* Bordes redondeados */
-  cursor: pointer; /* Cursor de puntero */
-  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transición suave */
-  text-decoration: none; /* Quitar subrayado */
-  box-shadow: 0 0 5px var(--imperial-red); /* Sombra del color actual del borde */
-}
-
-.button:hover {
-  background-color: var(
-    --imperial-red
-  ); /* Interior en --imperial-red al hacer hover */
-  color: white; /* Texto en blanco */
-  border: 2px solid var(--imperial-red); /* Borde igual que el relleno al hacer hover */
-  box-shadow: 0 0 5px var(--imperial-red); /* Sombra del color actual del borde */
-}
-
-.button:active {
-  background-color: var(--engineering-orange-complementary); /* Interior en color complementario */
-  color: var(--white-smoke-complementary); /* Texto en color complementario */
-  border: 2px solid var(--engineering-orange-complementary); /* Borde igual que el relleno */
-  box-shadow: 0 0 5px var(--engineering-orange-complementary); /* Sombra del color actual del borde */
-}
-
-.footer {
-  background-color: var(--jet);
-  color: var(--white-smoke);
+/* Secciones centradas */
+.hero-section,
+.features-section,
+.join-section {
+  font-family: 'rubik';
+  /* border: 1px outset var(--silver);  */
+  /* box-shadow: 0 1px 2px var(--silver); */
+  border-radius: 10px;
   padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  /* Ancho máximo para centrar mejor */
+  text-align: center;
+  /* Contenido centrado */
+}
+
+.first-title {
+  font-family: "Rubik Dirt", system-ui;
+}
+
+.hero-img {
+  max-width: 100%;
+}
+
+/* Footer */
+.footer-top {
+  background-color: var(--red);
+  /* Franja roja */
+  padding: 10px 0;
+}
+
+.footer-top img {
+  max-height: 5rem;
+  margin: 0 3rem;
+}
+
+.footer-bottom {
+  background-color: var(--black);
+  /* Fondo negro */
+  color: var(--white);
+  padding: 15px 0;
   text-align: center;
 }
 
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.social-icons i {
+  color: var(--yellow);
+  margin: 0 10px;
+  font-size: 20px;
 }
 
-.footer-logo {
-  height: 100px;
-  width: 100px;
-  margin-bottom: 20px;
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.footer-link {
-  color: var(--white-smoke);
+a {
   text-decoration: none;
-  margin: 5px 0;
-  transition: color 0.3s;
+  color: var(--yellow);
 }
 
-.footer-link:hover {
-  color: var(--imperial-red);
+a:hover {
+  color: var(--yellow-gold);
 }
 
-.footer-copyright {
-  font-size: 14px;
-  color: var(--silver);
-}
-
-.svg-discord {
-  display: inline-block;
-  cursor: pointer; /* Cursor de puntero */
-}
-
-.svg-discord:hover {
-  transform: scale(1.05); /* Aumentar tamaño al hacer hover */
-}
-
-.svg-discord:active {
-  transform: scale(0.95); /* Reducir tamaño al hacer clic */
-}
-
-.svg-discord path {
-  fill: var(--yellow);
-}
-
-.svg-discord path:nth-child(2) {
-  fill: var(--jet);
-}
-
-.svg-discord path:nth-child(3),
-.svg-discord path:nth-child(4) {
-  fill: var(--yellow);
-}
-
-.svg-discord path:nth-child(5),
-.svg-discord path:nth-child(6),
-.svg-discord path:nth-child(7),
-.svg-discord path:nth-child(8),
-.svg-discord path:nth-child(9),
-.svg-discord path:nth-child(10),
-.svg-discord path:nth-child(11),
-.svg-discord path:nth-child(12),
-.svg-discord path:nth-child(13) {
-  fill: var(--old-gold);
+.logo-header{
+  width: 35%;
 }
